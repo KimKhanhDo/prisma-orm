@@ -1,6 +1,21 @@
 {
-  "dependencies": {
-    "dotenv": "^17.2.3",
-    "express": "^5.2.1"
-  }
+    "scripts": {
+        "start": "node server.js",
+        "dev": "node --watch server.js"
+    },
+    "_moduleAliases": {
+        "@root": "./",
+        "@": "./src"
+    },
+    "dependencies": {
+        "@prisma/adapter-mariadb": "^7.3.0",
+        "@prisma/client": "^7.3.0",
+        "cors": "^2.8.6",
+        "dotenv": "^17.2.3",
+        "express": "^5.2.1",
+        "module-alias": "^2.2.3"
+    },
+    "devDependencies": {
+        "prisma": "^7.3.0"
+    }
 }
