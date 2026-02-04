@@ -1,4 +1,4 @@
-const { HTTP_STATUS } = require('@/constant');
+const { HTTP_STATUS } = require('@/config/constant');
 
 const response = (_, res, next) => {
     // Thêm method success & error vào res

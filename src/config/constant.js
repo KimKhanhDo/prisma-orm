@@ -26,6 +26,9 @@ module.exports = {
         DATABASE_ERROR: 'Database operation failed',
         INTERNAL_ERROR: 'Internal server error',
 
+        // Prisma
+        DUPLICATE: 'Duplicate entry',
+
         // Auth
         REGISTER_FAIL: 'Failed to register new user',
         EMAIL_EXITS: 'Email already exists',
@@ -78,6 +81,10 @@ module.exports = {
 
         // Server Error
         INTERNAL_SERVER_ERROR: 500,
+    },
+
+    PRISMA_CODES: {
+        DUPLICATE: 'P2002',
     },
 
     QUEUE_STATUS: {
