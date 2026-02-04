@@ -1,5 +1,4 @@
 const authConfig = require('@/config/auth');
-const { accessTokenTTL } = require('@/config/auth');
 const authService = require('@/services/auth.service');
 
 const register = async (req, res) => {
@@ -13,4 +12,8 @@ const register = async (req, res) => {
     });
 };
 
-module.exports = { register };
+const getCurrentUser = async (req, res) => {
+    return res.success(req.auth.user);
+};
+
+module.exports = { register, getCurrentUser };

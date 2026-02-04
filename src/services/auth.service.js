@@ -33,6 +33,23 @@ class AuthService {
 
         return accessToken;
     }
+
+    async getUserById(id) {
+        const user = await prisma.user.findUnique({
+            select: {
+                id: true,
+                username: true,
+                email: true,
+                firstName: true,
+                lastName: true,
+                avatar: true,
+                isVerified: true,
+                emailVerifiedAt: true,
+            },
+            where: { id },
+        });
+        return user;
+    }
 }
 
 module.exports = new AuthService();
