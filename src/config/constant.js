@@ -7,9 +7,6 @@ module.exports = {
 
     // Authentication
     BCRYPT_SALT_ROUNDS: 10,
-    // ACCESS_TOKEN_TTL_SECONDS: 3600, // 1 giờ = 60 * 60
-    ACCESS_TOKEN_TTL_SECONDS: 12 * 60 * 60, // 12 giờ (43200s)
-    REFRESH_TOKEN_TTL_DAYS: 7, // 7 ngày
 
     // Database
     DB_CONNECTION_LIMIT: 10,
